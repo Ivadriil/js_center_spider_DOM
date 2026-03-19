@@ -1,7 +1,12 @@
 'use strict';
 
-const elem = document.querySelector('.spider');
-const x = 175;
+const elemSpider = document.querySelector('.spider');
+const elemWall = document.querySelector('.wall')
 
-elem.style.top = `${x}px`;
-elem.style.left = `${x}px`;
+const x = (elemWall.clientWidth - elemSpider.offsetWidth) / 2;
+const y = (elemWall.clientHeight - elemSpider.offsetHeight) / 2;
+
+elemSpider.style.top = `${x}px`;
+elemSpider.style.left = `${y}px`;
+
+
